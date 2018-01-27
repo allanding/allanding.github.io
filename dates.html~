@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="_your description goes here_" />
+<meta name="keywords" content="_your,keywords,goes,here_" />
+<meta name="author" content="_your name goes here_  / Original design: Andreas Viklund - http://andreasviklund.com/" />
+<link rel="stylesheet" type="text/css" href="andreas01.css" media="screen" title="andreas01 (screen)" />
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+<title>AMFG-2017</title>
+</head>
+
+<body><div id="wrap">
+
+<div id="header">
+</div>
+
+<img id="frontphoto" src="logo.png" width="760" height="175" alt="" />
+
+<div id="avmenu">
+<h2 class="hide">Menu:</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="cfp.html">Call For Papers</a></li>
+<li><a href="dates.html">Important Dates</a></li>
+<li><a href="submission.html">Submission</a></li>
+<li><a href="people.html">People</a></li>
+<li><a href="invited.html">Invited Speakers</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="previous.html">Previous Workshop</a></li>
+</ul>
+
+<div class="announce">
+<h3>Latest news:</h3>
+<p><strong>Coming soon!</strong><br />
+<p class="textright"><a href="index.html">Read more...</a></p>
+</div>
+
+</div>
+
+
+<div id="extras">
+<h3>Invited Speakers:</h3>
+<p>Coming Soon!</p>
+<!-- <p><a href="https://cs.gmu.edu/~wechsler/" target="_blank">Harry Wechsler</a><p>
+<p><a href="http://web.media.mit.edu/~picard/" target="_blank">Rosalind W. Picard</a><p>
+<p><a href="http://www.cs.bu.edu/~sclaroff/" target="_blank">Stan Sclaroff</a><p>
+<p><a href="http://chenlab.ece.cornell.edu/people/Andy/" target="_blank">Andrew Gallagher</a><p>
+<p><a href="http://www.cs.columbia.edu/~belhumeur/" target="_blank">Peter N. Belhumeur</a><p>
+<p><a href="http://cseweb.ucsd.edu/~kriegman/" target="_blank">David J. Kriegman</a><p> -->
+<h3>Sponsors:</h3>
+<img src="cvf.png" alt="" width="50" height="32"/> 
+<p><p>
+<img src="ICCVLogo_alpha.png" alt="" width="110" height="30"/>
+<p><p>
+<img src="ieee_cs.png" alt="" width="100" height="35"/> 
+<p><p>
+<img src="small_logo_2.png" alt="" width="100" height="25"/> 
+ </div>
+
+<!-- <div id="extras">
+<h3>Invited Speakers:</h3>
+<p><a href="http://www3.nd.edu/~kwb/" target="_blank">Kevin W. Bowyer</a><p>
+<p><a href="https://billf.mit.edu/" target="_blank">Bill Freeman</a><p>
+<p><a href="http://www.ecse.rpi.edu/~qji/" target="_blank">Qiang Ji</a><p>
+<h3>Sponsors:</h3>
+<img src="cvf.png" alt="" width="50" height="32"/> 
+<p><p>
+<img src="ICCVLogo_alpha.png" alt="" width="110" height="30"/>
+<p><p>
+<img src="ieee_cs.png" alt="" width="100" height="35"/> 
+ </div> -->
+
+<div id="content">
+  <h5>Important Dates</h5>
+  <ul>
+  <p><p>
+  <p><p>
+      <li>Submission Deadline: Jul. 20, 2017 (may extend later)</li>
+  <p><p>
+  <p><p>
+  <li>Notification: Aug. 15, 2017</li> 
+  <p><p>
+  <p><p>
+  <li>Camera Ready: Aug. 20, 2017</li>  
+  <p><p>
+  <p><p>
+  <li>Workshop Date: Coming soon.</li>  
+  <p><p>
+  <p><p>
+  </ul>
+</div>
+
+<div id="footer">
+Copyright &copy; 2017 <a href="http://www.northeastern.edu/smilelab/">SMILE Lab</a>, Northeastern University..
+</div>
+
+</div>
+</body>
+</html>
