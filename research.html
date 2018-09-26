@@ -9,39 +9,23 @@
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 <title>Allan's Homepage</title>
 
+  <SCRIPT>
+  function show(c_Str,imgg)
+  {if(document.all(c_Str).style.display=='none')
+  {document.all(c_Str).style.display='block';
+  document.all(imgg).src='http://www.webym.net/jiaocheng/upfile/jscontent/12493937251.gif'}
+  else{document.all(c_Str).style.display='none';
+  document.all(imgg).src='http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif'}}
+  </SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+  function preview(){
+  pr=window.open('','Preview','scrollbars=1,menubar=1,status=1,width=480 height=320,left=10,top=10');
+  pr.document.write(jstxt.innerText);}
+  </SCRIPT>
+
 <style type="text/css"> .firstLevel {   list-style: none;     } .secondLevel {    display: none;  } #first1:hover ul, #first2:hover ul, #first3:hover ul {    display: block; } 
-
-/*svg{margin-left: -20px;}*/
-
-
-<!-- 
-
-h3{　　　　　　　　　　　/*指定h3標題文字*/ 
-
-display: block;　　　　　　　　　　　/*將超連結設定為區塊模式，就可以設定長度和寬度*/ 
-
-height: 25px;　　　　　　　　　　　　/*設定區塊的高度*/ 
-
-width: 513px;　　　　　　　　　　　　/*設定區塊的寬度*/ 
-
-background-image: url(bar.gif);　　/*設定區塊的背景圖*/ 
-
-font-size: 12px;　　　　　　　　　　　/*設定文字大小*/ 
-
-color: #000000;　　　　　　　　　　　/*設定文字顏色*/ 
-
-text-indent: 40px;　　　　　　　　　　　　　/*文字內縮排40像素*/ 
-
-font-weight: bold;　　　　　　　　　　　/*設定文字為粗體*/ 
-
-padding-top: 12px;　　　　　　　　　　/*設定文字在區塊中的上方間距*/ 
-
-
-
-
-} 
-
---> 
 
 </style>
 
@@ -82,39 +66,46 @@ padding-top: 12px;　　　　　　　　　　/*設定文字在區塊中的上
  </div>
 
 
-
 <div id="content">
   <h5>Research Interests</h5>
   <p3>My research interest lies in computer vision and machine learning, with a focus on developing scalable algorithms to learn robust representations from large-scale data.</p3><br>
 
 
-<font size="3" color="red">[Note Move Mouse on Specific Topics, See More!]</font><br>
+  <table width="96%" height="18" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+  <td> </td>
+  </tr>
+  <tr> 
+  <td> <TABLE 
+  style="PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px" 
+  cellSpacing=1 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR> 
+  <TD height=16 
+  style="BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 0px solid; PADDING-LEFT: 4px; BORDER-LEFT: #cccccc 0px solid; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #cccccc 0px solid; BACKGROUND-COLOR: #ffffff" 
+  onclick='show("tip432","img432")'><IMG 
+  id=img432 hspace=1 src="http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif" align=absMiddle 
+  border=0> <p3>Transfer Learning</p3>
+  <TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+  <TR> 
+  <TD width="20" 
+  height=1 colSpan=2 background=images/bg-line.gif></TD>
+  </TR>
+  </TBODY>
+  </TABLE></TD>
+  </TR>
+  <TR> 
+  <TD id=tip432 
+  style="PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px" 
+  width="100%"> <DIV 
+  style="BORDER-RIGHT: #808080 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #808080 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #808080 0px solid; LINE-HEIGHT: 150%; PADDING-TOP: 4px; BORDER-BOTTOM: #808080 0px solid; BACKGROUND-COLOR: #f7f7ef">
 
-  <ul class="firstLevel">
-  
-    <li id="first1"><p3><strong><div style="background-color:#FFBB73;">Transfer Learning</div></strong></p3>
-<!--   <svg height="100" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-    <path id="my_path"  d="M 50 50 a 20 20, 0, 1, 1, 0 1 Z" fill="none"/>
-    <text>
-      <textPath xlink:href="#my_path">Transfer Learning</textPath>
-    </text>
-  </svg> -->
-<br>
-<!-- <li id="first1"><p3><strong><div>Transfer Learning
-  <svg height="100" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-    <path id="my_path"  d="M 50 50 a 20 20, 0, 1, 1, 0 1 Z" fill="none"/>
-    <text>
-      <textPath xlink:href="#my_path">Transfer Learning</textPath>
-    </text>
-  </svg>
-</div></strong></p3><br> -->
-<ul class="secondLevel">
-
-  <div align="center" vertical-align="middle">
+<div align="center" vertical-align="middle">
             Missing Modality Transfer Learning
-        </div><br>
+</div><br>
 
-  <img id="mmtl" src="figure/mmtl.png" width="670" height="120" alt="" />
+<img id="mmtl" src="figure/mmtl.png" width="670" height="120" alt="" text-align="center"  />
 
 <strong>[Introduction]</strong><br>
 
@@ -132,10 +123,11 @@ padding-top: 12px;　　　　　　　　　　/*設定文字在區塊中的上
 
 
 <div align="center" vertical-align="middle">
-            Missing Modality Transfer Learning
+            Incomplete Multi-Source Transfer Learning
         </div><br>
 
-  <img id="imtl" src="figure/imtl.png" width="620" height="280" alt="" />
+  <img id="imtl" src="figure/imtl.png" width="540" height="240" alt="" text-align="center" />
+  <br>
 
 <strong>[Introduction]</strong><br>
 
@@ -147,17 +139,34 @@ padding-top: 12px;　　　　　　　　　　/*設定文字在區塊中的上
 
 <font size="2" color="black">
 <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. Incomplete Multisource Transfer Learning. IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), vol. 29, no. 2, pp. 310-323, 2018.</font>
-<hr size=3>
-
-</ul>
-</li>
 
 
 
-<li id="first1"><p3><strong><div style="background-color:pink;">Multi-view Learning</div></strong></p3><br>
-<ul class="secondLevel">
+</DIV></TD>
+  </TR>
+  <br>
+  <TR> 
+  <TD height=16 
+  style="BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 0px solid; PADDING-LEFT: 4px; BORDER-LEFT: #cccccc 0px solid; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #cccccc 0px solid; BACKGROUND-COLOR: #ffffff" 
+  onclick='show("tip331","img331")'><IMG 
+  id=img331 hspace=1 src="http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif" align=absMiddle 
+  border=0>  <p3>Multi-view Learning</p3>
+  <TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+  <TR> 
+  <TD width="20" 
+  height=1 colSpan=2 background=images/bg-line.gif></TD>
+  </TR>
+  </TBODY>
+  </TABLE></TD>
+  </TR>
+  <TR> 
+  <TD id=tip331 
+  style="PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px" 
+  width="100%"> <DIV 
+  style="BORDER-RIGHT: #808080 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #808080 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #808080 0px solid; LINE-HEIGHT: 150%; PADDING-TOP: 4px; BORDER-BOTTOM: #808080 0px solid; BACKGROUND-COLOR: #f7f7ef">
 
-  <div align="center" vertical-align="middle">
+<div align="center" vertical-align="middle">
             Low-rank Common Subspace Learning 
         </div><br>
 
@@ -180,15 +189,31 @@ Conference on Data Mining (<b>ICDM</b>), 2014.</font>
 
 
 
-</ul></li>
+</DIV></TD>
+  </TR>
+  <TR> 
+  <TD height=16 
+  style="BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 0px solid; PADDING-LEFT: 4px; BORDER-LEFT: #cccccc 0px solid; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #cccccc 0px solid; BACKGROUND-COLOR: #ffffff" 
+  onclick='show("tip247","img247")'><IMG 
+  id=img247 hspace=1 src="http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif" align=absMiddle 
+  border=0> <p3> Robust Feature Learning</p3>
 
+  <TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+  <TR> 
+  <TD width="20" 
+  height=1 colSpan=2 background=images/bg-line.gif></TD>
+  </TR>
+  </TBODY>
+  </TABLE></TD>
+  </TR>
+  <TR> 
+  <TD id=tip247 
+  style="PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px" 
+  width="100%"> <DIV 
+  style="BORDER-RIGHT: #808080 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #808080 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #808080 0px solid; LINE-HEIGHT: 150%; PADDING-TOP: 4px; BORDER-BOTTOM: #808080 0px solid; BACKGROUND-COLOR: #f7f7ef">
 
-
-
-<li id="first1"><p3><strong><div style="background-color:yellow;">Deep Feature Learning</div></strong></p2><br>
-<ul class="secondLevel">
-
-  <div align="center" vertical-align="middle">
+<div align="center" vertical-align="middle">
             Deep Robust Encoder 
  <br>
 
@@ -205,16 +230,33 @@ Conference on Data Mining (<b>ICDM</b>), 2014.</font>
 
 <font size="2" color="black">
 <b>Zhengming Ding</b>, Ming Shao and Yun Fu. Deep Robust Encoder through Locality Preserving Low-Rank Dictionary. European Conference on Computer Vision, (<b>ECCV</b>), 2016.</font>
-<hr size=3>
 
+<!-- <hr size=3> -->
 
-</ul></li>
+</DIV></TD>
+  </TR>
+  <TR> 
+  <TD height=16 
+  style="BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 0px solid; PADDING-LEFT: 4px; BORDER-LEFT: #cccccc 0px solid; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #cccccc 0px solid; BACKGROUND-COLOR: #ffffff" 
+  onclick='show("tip166","img166")'><IMG 
+  id=img166 hspace=1 src="http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif" align=absMiddle 
+  border=0><p3> Zero-Shot Learning</p3>
+  <TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+  <TR> 
+  <TD width="20" 
+  height=1 colSpan=2 background=images/bg-line.gif></TD>
+  </TR>
+  </TBODY>
+  </TABLE></TD>
+  </TR>
+  <TR> 
+  <TD id=tip166 
+  style="PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px" 
+  width="100%"> <DIV 
+  style="BORDER-RIGHT: #808080 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #808080 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #808080 0px solid; LINE-HEIGHT: 150%; PADDING-TOP: 4px; BORDER-BOTTOM: #808080 0px solid; BACKGROUND-COLOR: #f7f7ef">
 
-
-<li id="first1"><p3><strong><div style="background-color:gray;">Zero-Shot Learning</div></strong></p3><br>
-<ul class="secondLevel">
-
-  <div align="center" vertical-align="middle">
+<div align="center" vertical-align="middle">
             Generative Zero-Shot Learning
         </div><br>
 
@@ -232,18 +274,34 @@ Zero-shot learning for visual recognition, which approaches identifying unseen c
 1. <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. Generative Zero-Shot Learning via Low-Rank Embedded Semantic Dictionary. IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2018.<br>
 2. <b>Zhengming Ding</b>, Ming Shao and Yun Fu. Low-Rank Embedded Ensemble Semantic Dictionary for Zero-Shot Learning. IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017.
 </font>
-<hr size=3>
+<!-- <hr size=3> -->
 
 
-</ul>
 
-</li>
+</DIV></TD>
+  </TR>
+  <TR> 
+  <TD height=16 
+  style="BORDER-RIGHT: #cccccc 0px solid; BORDER-TOP: #cccccc 0px solid; PADDING-LEFT: 4px; BORDER-LEFT: #cccccc 0px solid; CURSOR: hand; COLOR: #333333; BORDER-BOTTOM: #cccccc 0px solid; BACKGROUND-COLOR: #ffffff" 
+  onclick='show("tip158","img158")'><IMG 
+  id=img158 hspace=1 src="http://www.webym.net/jiaocheng/upfile/jscontent/12493937250.gif" align=absMiddle 
+  border=0> <p3> One-Shot Learning </p3>
+  <TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+  <TR> 
+  <TD width="20" 
+  height=1 colSpan=2 background=images/bg-line.gif></TD>
+  </TR>
+  </TBODY>
+  </TABLE></TD>
+  </TR>
+  <TR> 
+  <TD id=tip158 
+  style="PADDING-RIGHT: 1px; DISPLAY: none; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px" 
+  width="100%"> <DIV 
+  style="BORDER-RIGHT: #808080 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #808080 0px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #808080 0px solid; LINE-HEIGHT: 150%; PADDING-TOP: 4px; BORDER-BOTTOM: #808080 0px solid; BACKGROUND-COLOR: #f7f7ef">
 
-
-<li id="first1"><p3><strong><div style="background-color:green;">One-Shot Learning</div></strong></p3><br>
-<ul class="secondLevel">
-
-  <div align="center" vertical-align="middle">
+<div align="center" vertical-align="middle">
             One-Shot Face Recognition
         </div><br>
 
@@ -258,53 +316,25 @@ One-shot face recognition measures the ability to recognize persons with only se
 <strong>[Related Work]</strong><br>
 
 1. <b>Zhengming Ding</b>, Yandong Guo, Lei Zhang, Yun Fu. One-Shot Face Recognition via Generative Learning, IEEE Conference on Automatic Face and Gesture Recognition (FG), 2018.
-</p2>
+
+
+</DIV></TD>
+  </TR>
+  </TBODY>
+  </TABLE></td>
+  </tr>
+  </table>
+
+<br>
+
+<div id="Click">
+
+
+
+
 </ul>
 
-</li>
-
-</ul>
-
-
-<!--   <ul>
-  <li> <p2><strong>Transfer Learning</strong></p2><br>
-
-<div align="center" vertical-align="middle">
-            Missing Modality Transfer Learning
-        </div><br>
-
-  <img id="mmtl" src="figure/mmtl.png" width="700" height="120" alt="" />
-
-<strong>[Introduction]</strong><br>
-
-Transfer learning is usually exploited to leverage previously well-learned source domain for evaluating the unknown target domain; however, it may fail if no target data are available in the training stage. This problem arises when the data are multi-modal. For example, the target domain is in one modality while the source domain is in another. To overcome this, we first borrow an auxiliary database with complete modalities, then consider knowledge transfer across databases and across modalities within databases simultaneously in a single framework. The contributions are threefold: 1) a latent factor is introduced to uncover the underlying structure of the missing modality from the known data; 2) transfer learning in two directions allows the data alignment between both modalities and databases, giving rise to a very promising recovery; 3) an efficient solution with theoretical guarantees to the proposed latent low-rank transfer learning algorithm. 
-
-<br>
-
-<strong>[Related Work]</strong><br>
-
-1. <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. <i>Missing Modality Transfer Learning via Latent Low-Rank Constraint</i>. IEEE Transactions on Image Processing (<b>TIP</b>), vol. 24, no. 11, pp. 4322-4334, 2015.
-
-<br>
-2. <b>Zhengming Ding</b>, Ming Shao and Yun Fu. <i>Latent Low-Rank Transfer Subspace Learning for Missing Modality Recognition</i>. Twenty-Eighth AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2014.
-
-<br>
-
-
-  </li>
-  <p><p>
-  <li><p2><strong>Multi-view Subspace Learning</strong></p2>
-
-  </li>
-  <p><p>
-  <li><p2><strong>Deep Feature Learning</strong></p2>
-  </li>
-  <p><p>
-  <li><p2><strong>Zero-Shot Learning</strong></p2><p></p>
-  </li>
-    <li><p2><strong>One-Shot Learning</strong></p2>
-  </li>
-  </ul> -->
+</div>
 </div>
 
 
