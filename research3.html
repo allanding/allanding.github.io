@@ -9,14 +9,14 @@
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 <title>Allan's Homepage</title>
 <style type="text/css">
-body { font-family: Arial; font-size: 16px; }
-dl { width: 300px; }
+body { font-family: Arial; font-size: 14px; }
+dl { width:500px; }
 dl,dd { margin: 0; }
 dt { background-color:#ae8758; background-image:url(images/201207.png); background-repeat:no-repeat; background-position:5px 13px; font-size: 18px; padding: 5px 5px 5px 20px; margin: 2px; height:29px; line-height:28px; }
 dt a { color: #FFF; text-decoration:none; }
 dd a { color: #000; }
 ul{ list-style: none; padding:5px 5px 5px 20px; margin:0; }
-li{ line-height:24px;}
+li{ line-height:25px;}
 .bg{ background-position:5px -16px;}
 </style>
 <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
@@ -124,77 +124,55 @@ li .key {
   <h5>Research Interests</h5>
   <p3>My research interest lies in computer vision and machine learning, with a focus on developing scalable algorithms to learn robust representations from large-scale data.</p3>
   <ul>
-  <li> <p2><strong>Transfer Learning</strong></p2>
-  </li>
-  
-<!--   <li>
-<div class="main" id="main1">
-  <h3>孤雁儿</h3>
-  <p class="mainf">世人作梅词，下笔便俗。予试作一篇，乃知前言不妄耳。</p>
-  <p>藤床纸帐朝眠起，
-  <br />说不尽、无佳思。
-  <br />沈香烟断玉炉寒，
-  <br />伴我情怀如水。
-  <br />笛声三弄，
-  <br />梅心惊破，
-  <br />多少春情意。</p>
-  <p>小风疏雨萧萧地，
-  <br />又催下、千行泪。
-  <br />吹箫人去玉楼空，
-  <br />肠断与谁同倚？
-  <br />一枝折得，
-  <br />人间天上，
-  <br />没个人堪寄。</p>
-</div>
-<div class="intro">
-  作者：李清照
-  <span class="key" onclick="fn(this,1)">折叠</span>
-</div>
-</li> -->
-  <p><p>
-  <li><p2><strong>Multi-view Subspace Learning</strong></p2>
+  <dl>
+ <dt><p2>Transfer Learning</p2></dt>
+ <dd>
+ <ul>
+  <li>Missing Modality Transfer [<a href="http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/download/8256/8558">AAAI-14</a>], [<a href="https://ieeexplore.ieee.org/abstract/document/7172522/">TIP-15</a>]</li>
+  <li><a href="#">Transfer Metric Learning</a></li>
+    <li><a href="#">Incomplete Multi-Source Transfer Learning</a></li>
+  <li><a href="#">Deep Transfer Low-rank Coding</a></li>
+  <li><a href="#">Deep Domain Generalization</a></li>
+ </ul>
+ </dd>
+ <dt><p2>Multi-view Subspace Learning</p2></dt>
+ <dd>
+ <ul>
+  <li><a href="#">新郑机场</a></li>
+  <li><a href="#">周边高速</a></li>
+ </ul>
+ </dd>
+ <dt><p2>Deep Feature Learning</p2></dt>
+ <dd>
+ <ul>
+  <li><a href="#">房产论坛</a></li>
+  <li><a href="#">大河论坛</a></li>
+  <li><a href="#">天下中原</a></li>
+ </ul>
+ </dd>
 
-  </li>
-  <p><p>
-  <li><p2><strong>Deep Feature Learning</strong></p2>
-  </li>
-  <p><p>
-  <li><p2><strong>Zero-Shot Learning</strong></p2><p></p>
-  </li>
-    <li><p2><strong>One-Shot Learning</strong></p2>
-  </li>
+  <dt><p2>Zero-Shot Learning</p2></dt>
+ <dd>
+ <ul>
+  <li><a href="#">房产论坛</a></li>
+  <li><a href="#">大河论坛</a></li>
+  <li><a href="#">天下中原</a></li>
+ </ul>
+ </dd>
+
+   <dt><p2>One-Shot Learning</p2></dt>
+ <dd>
+ <ul>
+  <li><a href="#">房产论坛</a></li>
+  <li><a href="#">大河论坛</a></li>
+  <li><a href="#">天下中原</a></li>
+ </ul>
+ </dd>
+
+</dl>
   </ul>
 </div>
 
-<script type="text/javascript">
-var h = new Array(0,380,25,25,25);
-var tf = new Array(false,true,false,false,false);
-var minheight = 25;
-var maxheight = 380;
-function fn(likey,tag){
-  if (tf[tag]){
-    if (h[tag]>=minheight){
-      document.getElementById("main"+tag).style.height = h[tag] + "px";
-      setTimeout(function(){fn(likey,tag)},1);
-      h[tag] -= 10;
-    } else {
-      likey.innerHTML = "展开";
-      tf[tag] = !tf[tag];
-      h[tag] += 10;
-    }
-  } else {
-    if (h[tag]<=maxheight){
-      document.getElementById("main"+tag).style.height = h[tag] + "px";
-      setTimeout(function(){fn(likey,tag)},1);
-      h[tag] += 10;
-    } else {
-      likey.innerHTML = "折叠";
-      tf[tag] = !tf[tag];
-      h[tag] -= 10;
-    }
-  }
-}
-</script>
 
 
 <div id="footer">
