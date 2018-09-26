@@ -53,35 +53,197 @@
 
 <div id="content">
   <h5>Research Interests</h5>
-  <p3>My research interest lies in computer vision and machine learning, with a focus on developing scalable algorithms to learn robust representations from large-scale data.</p3>
-  <ul>
-  <li> <p2><strong>Transfer Learning</strong></p2>
+  <p3>My research interest lies in computer vision and machine learning, with a focus on developing scalable algorithms to learn robust representations from large-scale data.</p3><br>
+
+
+<font size="3" color="red">[Note Move Mouse on Specific Topics, See More!]</font><br>
+
+  <ul class="firstLevel">
+<li id="first1"><p3><strong>Transfer Learning</strong></p3><br><br>
+<ul class="secondLevel">
+
+  <div align="center" vertical-align="middle">
+            Missing Modality Transfer Learning
+        </div><br>
+
+  <img id="mmtl" src="figure/mmtl.png" width="670" height="120" alt="" />
+
+<strong>[Introduction]</strong><br>
+
+<font size="2" color="black">Transfer learning is usually exploited to leverage previously well-learned source domain for evaluating the unknown target domain; however, it may fail if no target data are available in the training stage. This problem arises when the data are multi-modal. For example, the target domain is in one modality while the source domain is in another. To overcome this, we first borrow an auxiliary database with complete modalities, then consider knowledge transfer across databases and across modalities within databases simultaneously in a single framework. The contributions are threefold: 1) a latent factor is introduced to uncover the underlying structure of the missing modality from the known data; 2) transfer learning in two directions allows the data alignment between both modalities and databases, giving rise to a very promising recovery; 3) an efficient solution with theoretical guarantees to the proposed latent low-rank transfer learning algorithm. </font>
+
+<br>
+
+<strong>[Related Work]</strong><br>
+
+<font size="2" color="black">1. <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. <i>Missing Modality Transfer Learning via Latent Low-Rank Constraint</i>. IEEE Transactions on Image Processing (<b>TIP</b>), vol. 24, no. 11, pp. 4322-4334, 2015.
+
+<br>
+2. <b>Zhengming Ding</b>, Ming Shao and Yun Fu. <i>Latent Low-Rank Transfer Subspace Learning for Missing Modality Recognition</i>. Twenty-Eighth AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2014.</font>
+<hr size=3>
+
+
+<div align="center" vertical-align="middle">
+            Missing Modality Transfer Learning
+        </div><br>
+
+  <img id="imtl" src="figure/imtl.png" width="620" height="280" alt="" />
+
+<strong>[Introduction]</strong><br>
+
+<font size="2" color="black">Transfer learning is generally exploited to adapt well-established source knowledge for learning tasks in weakly labeled or unlabeled target domain. Nowadays, it is common to see multiple sources  available for knowledge transfer, each of which, however, may not include complete classes information of the target domain. Naively merging multiple sources together would lead to inferior results due to the large divergence among multiple sources. In this paper, we attempt to utilize incomplete multiple sources for effective knowledge transfer to facilitate the learning task in target domain. To this end, we propose an Incomplete Multi-source Transfer Learning (IMTL) through two directional knowledge transfer, i.e., cross-domain transfer from each source to target, and cross-source transfer. Specifically, in cross-domain direction, we deploy latent low-rank transfer learning guided by iterative structure learning to transfer knowledge from each single source to target domain. This practice reinforces to compensate for any missing data in each source by the complete target data. Whilst in cross-source direction, unsupervised manifold regularizer as well as effective multi-source alignment are explored to jointly compensate for missing data from one portion of source to another. </font>
+
+<br>
+
+<strong>[Related Work]</strong><br>
+
+<font size="2" color="black">
+<b>Zhengming Ding</b>, Ming Shao, and Yun Fu. Incomplete Multisource Transfer Learning. IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), vol. 29, no. 2, pp. 310-323, 2018.</font>
+<hr size=3>
+
+</ul>
+</li>
+
+
+
+<li id="first1"><p3><strong>Multi-view Learning</strong></p3><br><br>
+<ul class="secondLevel">
+
+  <div align="center" vertical-align="middle">
+            Low-rank Common Subspace Learning 
+        </div><br>
+
+  <img id="lrcs" src="figure/lrcs.png" width="670" height="300" alt="" />
+
+<strong>[Introduction]</strong><br>
+
+<font size="2" color="black">Multi-view data are of great abundance in real-world applications, since various view-points and multiple sensors desire to represent the data in a better way. Conventional multi-view learning methods aimed to learn multiple view-specific transformations meanwhile assumed the view knowledge of training and test data were available in advance. However, they would fail when we do not have any prior knowledge for the probe data's view information, since the correct view-specific projections cannot be utilized to extract effective feature representations. In this paper, we develop a Collective Low-Rank Subspace (CLRS) algorithm to deal with this problem in multi-view data analysis. CLRS attempts to reduce the semantic gap across multiple views through seeking a view-free low-rank projection shared by multiple view-specific transformations. Moreover, we exploit low-rank reconstruction to build a bridge between the view-specific features and those view-free ones transformed with the collective low-rank subspace. Furthermore, a supervised cross-view regularizer is developed to couple the within-class data across different views to make the learned collective subspace more discriminative.</font>
+
+<br>
+
+<strong>[Related Work]</strong><br>
+
+<font size="2" color="black">
+1. <b>Zhengming Ding</b>, and Yun Fu. Robust Multi-view Data Analysis through Collective Low-Rank Subspace.
+IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>), vol. 29, no. 5, pp. 1986-1997, 2018.<br>
+2. <b>Zhengming Ding</b>, Yun Fu. Low-Rank Common Subspace for Multi-View Learning. IEEE International
+Conference on Data Mining (<b>ICDM</b>), 2014.</font>
+<hr size=3>
+
+
+
+</ul></li>
+
+
+
+
+<li id="first1"><p3><strong>Deep Feature Learning</strong></p2><br><br>
+<ul class="secondLevel">
+
+  <div align="center" vertical-align="middle">
+            Deep Robust Encoder 
+ <br>
+
+  <img id="dre" src="figure/dre.png" width="460" height="400" alt="" />       </div><br>
+
+
+<strong>[Introduction]</strong><br>
+
+<font size="2" color="black">Deep learning has attracted increasing attentions recently due to its appealing performance in various tasks. As a principal way of deep feature learning, deep auto-encoder has been widely discussed in such problems as dimensionality reduction and model pre-training. Conventional auto-encoder and its variants usually involve additive noises (e.g., Gaussian, masking) for training data to learn robust features, which, however, did not consider the already corrupted data. In this paper, we propose a novel Deep Robust Encoder (DRE) through locality preserving low-rank dictionary to extract robust and discriminative features from corrupted data, where a low-rank dictionary and a regularized deep auto-encoder are jointly optimized. First, we propose a novel loss function in the output layer with a learned low-rank clean dictionary and corresponding weights with locality information, which ensures that the reconstruction is noise free. Second, discriminant graph regularizers that preserve the local geometric structure for the data are developed to guide the deep feature learning in each encoding layer.</font>
+
+<br>
+
+<strong>[Related Work]</strong><br>
+
+<font size="2" color="black">
+<b>Zhengming Ding</b>, Ming Shao and Yun Fu. Deep Robust Encoder through Locality Preserving Low-Rank Dictionary. European Conference on Computer Vision, (<b>ECCV</b>), 2016.</font>
+<hr size=3>
+
+
+</ul></li>
+
+
+<li id="first1"><p3><strong>Zero-Shot Learning</strong></p3><br><br>
+<ul class="secondLevel">
+
+  <div align="center" vertical-align="middle">
+            Generative Zero-Shot Learning
+        </div><br>
+
+  <img id="mmtl" src="figure/zero_shot.png" width="670" height="290" alt="" />
+<p2>
+<strong>[Introduction]</strong><br>
+
+Zero-shot learning for visual recognition, which approaches identifying unseen categories through a shared visual-semantic function learned on the seen categories and is expected to well adapt to unseen categories, has received considerable research attention most recently. However, the semantic gap between discriminant visual features and their underlying semantics is still the biggest obstacle, because there usually exists domain disparity across the seen and unseen classes. To deal with this challenge, we design two-stage generative adversarial networks to enhance the generalizability of semantic dictionary through low-rank embedding for zero-shot learning. In detail, we formulate a novel framework to simultaneously seek a two-stage generative model and a semantic dictionary to connect visual features with their semantics under a low-rank embedding. Our first-stage generative model is able to augment more semantic features for the unseen classes, which are then used to generate more discriminant visual features in the second stage, to expand the seen visual feature space. Therefore, we will be able to seek a better semantic dictionary to constitute the latent basis for the unseen classes based on the augmented semantic and visual data.
+
+<br><br>
+
+<strong>[Related Work]</strong><br>
+
+<font size="2" color="black">
+1. <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. Generative Zero-Shot Learning via Low-Rank Embedded Semantic Dictionary. IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2018.<br>
+2. <b>Zhengming Ding</b>, Ming Shao and Yun Fu. Low-Rank Embedded Ensemble Semantic Dictionary for Zero-Shot Learning. IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2017.
+</font>
+<hr size=3>
+
+
+</ul>
+
+</li>
+
+
+<li id="first1"><p3><strong>One-Shot Learning</strong></p3><br><br>
+<ul class="secondLevel">
+
+  <div align="center" vertical-align="middle">
+            One-Shot Face Recognition
+        </div><br>
+
+  <img id="mmtl" src="figure/one_shot.png" width="670" height="290" alt="" />
+<p2>
+<strong>[Introduction]</strong><br>
+
+One-shot face recognition measures the ability to recognize persons with only seeing them once, which is a hallmark of human visual intelligence. It is challenging for existing machine learning approaches to mimic this way, since limited data cannot well represent the data variance. To this end, we propose to build a large-scale face recognizer, which is capable to fight off the data imbalance difficulty. To seek a more effective general classifier, we develop a novel generative model attempting to synthesize meaningful data for one-shot classes by adapting the data variances from other normal classes. Specifically, we formulate conditional generative adversarial networks and the general Softmax classifier into a unified framework. Such a two-player minimax optimization can guide the generation of more effective data, which benefit the classifier learning for one-shot classes.
+
+<br><br>
+
+<strong>[Related Work]</strong><br>
+
+1. <b>Zhengming Ding</b>, Yandong Guo, Lei Zhang, Yun Fu. One-Shot Face Recognition via Generative Learning, IEEE Conference on Automatic Face and Gesture Recognition (FG), 2018.
+</p2>
+</ul>
+
+</li>
+
+</ul>
+
+
+<!--   <ul>
+  <li> <p2><strong>Transfer Learning</strong></p2><br>
+
+<div align="center" vertical-align="middle">
+            Missing Modality Transfer Learning
+        </div><br>
+
+  <img id="mmtl" src="figure/mmtl.png" width="700" height="120" alt="" />
+
+<strong>[Introduction]</strong><br>
+
+Transfer learning is usually exploited to leverage previously well-learned source domain for evaluating the unknown target domain; however, it may fail if no target data are available in the training stage. This problem arises when the data are multi-modal. For example, the target domain is in one modality while the source domain is in another. To overcome this, we first borrow an auxiliary database with complete modalities, then consider knowledge transfer across databases and across modalities within databases simultaneously in a single framework. The contributions are threefold: 1) a latent factor is introduced to uncover the underlying structure of the missing modality from the known data; 2) transfer learning in two directions allows the data alignment between both modalities and databases, giving rise to a very promising recovery; 3) an efficient solution with theoretical guarantees to the proposed latent low-rank transfer learning algorithm. 
+
+<br>
+
+<strong>[Related Work]</strong><br>
+
+1. <b>Zhengming Ding</b>, Ming Shao, and Yun Fu. <i>Missing Modality Transfer Learning via Latent Low-Rank Constraint</i>. IEEE Transactions on Image Processing (<b>TIP</b>), vol. 24, no. 11, pp. 4322-4334, 2015.
+
+<br>
+2. <b>Zhengming Ding</b>, Ming Shao and Yun Fu. <i>Latent Low-Rank Transfer Subspace Learning for Missing Modality Recognition</i>. Twenty-Eighth AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2014.
+
+<br>
+
+
   </li>
-  
-<!--   <li>
-<div class="main" id="main1">
-  <h3>孤雁儿</h3>
-  <p class="mainf">世人作梅词，下笔便俗。予试作一篇，乃知前言不妄耳。</p>
-  <p>藤床纸帐朝眠起，
-  <br />说不尽、无佳思。
-  <br />沈香烟断玉炉寒，
-  <br />伴我情怀如水。
-  <br />笛声三弄，
-  <br />梅心惊破，
-  <br />多少春情意。</p>
-  <p>小风疏雨萧萧地，
-  <br />又催下、千行泪。
-  <br />吹箫人去玉楼空，
-  <br />肠断与谁同倚？
-  <br />一枝折得，
-  <br />人间天上，
-  <br />没个人堪寄。</p>
-</div>
-<div class="intro">
-  作者：李清照
-  <span class="key" onclick="fn(this,1)">折叠</span>
-</div>
-</li> -->
   <p><p>
   <li><p2><strong>Multi-view Subspace Learning</strong></p2>
 
@@ -94,38 +256,9 @@
   </li>
     <li><p2><strong>One-Shot Learning</strong></p2>
   </li>
-  </ul>
+  </ul> -->
 </div>
 
-<script type="text/javascript">
-var h = new Array(0,380,25,25,25);
-var tf = new Array(false,true,false,false,false);
-var minheight = 25;
-var maxheight = 380;
-function fn(likey,tag){
-  if (tf[tag]){
-    if (h[tag]>=minheight){
-      document.getElementById("main"+tag).style.height = h[tag] + "px";
-      setTimeout(function(){fn(likey,tag)},1);
-      h[tag] -= 10;
-    } else {
-      likey.innerHTML = "展开";
-      tf[tag] = !tf[tag];
-      h[tag] += 10;
-    }
-  } else {
-    if (h[tag]<=maxheight){
-      document.getElementById("main"+tag).style.height = h[tag] + "px";
-      setTimeout(function(){fn(likey,tag)},1);
-      h[tag] += 10;
-    } else {
-      likey.innerHTML = "折叠";
-      tf[tag] = !tf[tag];
-      h[tag] -= 10;
-    }
-  }
-}
-</script>
 
 
 <div id="footer">
