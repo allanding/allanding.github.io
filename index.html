@@ -8,6 +8,11 @@
 <link rel="stylesheet" type="text/css" href="andreas01.css" media="screen" title="andreas01 (screen)" />
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
 <title>Allan's Homepage</title>
+
+<style type="text/css"> .firstLevel {   list-style: none;     } .secondLevel {    display: none;  } #first1:hover ul, #first2:hover ul, #first3:hover ul {    display: block; } 
+
+</style>
+
 </head>
 
 <body><div id="wrap">
@@ -18,18 +23,21 @@
 <img id="frontphoto" src="logo.png" width="1060" height="175" alt="" />
 
 <div id="avmenu">
-<h2 class="hide">Menu:</h2>
-<ul>
+<h2 class="hide">Full Publication:</h2>
+<ul class="firstLevel">
 <li><a href="index.html">Home</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="news.html">News</a></li>
-<li><a href="publication.html">Full Publication</a></li>
+<li id="first1"><a>Full Publication</a>
+<ul class="secondLevel">
+<li><a href="Journal.html"> * Journal</a></li>
+<li><a href="Conference.html"> * Conference</a></li>
+<li><a href="Others.html"> * Others</a></li>
+</ul></li>
 <li><a href="service.html">Service</a></li>
 <li><a href="award.html">Award</a></li>
 </ul>
 </div>
-
-
 
 <div id="extras">
 <h3>Links:</h3>
@@ -87,8 +95,8 @@
   <br>
   <p2>[09/2018] We get one paper on <i>person re-identification</i> accepted by IEEE Transactions on Neural Networks and Learning Systems (<b>TNNLS</b>). Congratulations to Kai. </p2><br>
   <p2>[09/2018] We get one paper on <i>ensemble clustering</i> accepted by ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>). Congratulations to Zhiqiang. </p2><br>
-  <p2>[09/2018] I have accepted the invitation to serve as an Associate Editor for the <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging">Journal of Electronic Imaging</a> (JEI).</p2>
-  <p2>[09/2018] I received a GPU donation from NVIDIA. </p2>
+  <p2>[09/2018] I have accepted the invitation to serve as an Associate Editor for the <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging">Journal of Electronic Imaging</a> (JEI).</p2><br>
+  <p2>[09/2018] I received a GPU donation from NVIDIA. </p2><br》
  <p2>[08/2018] We get 10th IEEE Transactions on Image Processing (<b>TIP</b>) paper accepted (<i>transfer subspace clustering</i>). Congratulations to Lichen. </p2><br>
 <p2>[08/2018] We get one paper on <i>zero-shot learning</i> accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>) joint with Prof. Ming Shao, and Prof. Yun Fu. </p2><br>  
      <p2>[08/2018] We get one paper on <i>multi-label learning</i> accepted by <a href="http://icbk2018.bigke.org/">ICBK 2018</a> joint with Prof. Ming Shao, Prof. Sheng Li, and Prof. Yun Fu.</p2><br>
@@ -117,7 +125,7 @@
 
 <br>
 <div>
-    <font size="4" color="Black">Selected Publications  <a href="publication.html">[Full Publication]</a></font><br><br>
+    <font size="4" color="Black">Selected Publications</font><br><br>
 
         <font size="3" color="Black">Journal (2 TPAMI, 3 TNNLS, 1 TKDE, 10 TIP, 1 TCSVT, 1 TITS, etc.)</font><br><br>
   
