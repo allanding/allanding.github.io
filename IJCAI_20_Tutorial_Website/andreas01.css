@@ -103,6 +103,9 @@ font-size: 0.9em;
 line-height: 1.5em;
 }
 
+#divcss5{ margin:10px auto} 
+#divcss5 img{ border-radius:50%} 
+
 #extras p {
 margin: 0 0 1.5em 0;
 }
