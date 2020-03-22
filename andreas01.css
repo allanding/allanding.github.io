@@ -26,6 +26,10 @@ padding: 0;
 height: 1px;
 }
 
+
+#divcss5{ margin:10px auto} 
+#divcss5 img{ border-radius:50%} 
+
 #header h1 {
 width: 270px;
 margin: 0 0 10px 0;
